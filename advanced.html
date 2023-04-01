@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Search</title>
+        <!-- CSS BOOTS TRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+         <!-- CSS -->
+         <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Top part-->
+        <div class="d-flex align-items-center mb-3 my-2 mx-3">
+            <div class="me-auto mb-3">
+                <a class="text-decoration-none" href="index.html">
+                    <span class="blue smaller">S</span><span class="red smaller">e</span><span class="yellow smaller">a</span><span class="blue smaller">r</span><span class="green smaller">c</span><span class="red smaller">h</span>
+                </a>
+            </div> 
+            <div class="mb-3">
+                <a class="mx-2 link-top" href="index.html">Search</a>
+                <a class="mx-2 link-top" href="image.html">Images</a>
+            </div>
+        </div>
+
+        <!-- Middle part-->
+        <div class="container d-flex flex-column mt-lg-5" style="box-sizing: border-box;">
+            <h1 class="h3 mb-4" style="color: rgb(192, 2, 2);">Advanced Search</h1>
+            <span class="border-bottom"></span>
+            <div class="mb-3">
+                <p class="pt-3">Find pages with...</p>
+
+
+            </div>
+            
+            <div class="container-md">
+                <form action="https://google.com/search">
+                    <div class="row g-3 align-items-center mb-3">
+                        <div class="col-auto">
+                          <label for="inputOne" class="form-label">all these words:</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputOne" class="form-control" aria-labelledby="HelpInlineOne" name="as_q">
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <span id="HelpInlineOne" class="form-text">
+                            Type the important words: tri-colour rat terrier
+                          </span>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center mb-3">
+                        <div class="col-auto">
+                          <label for="inputTwo" class="form-label">this exact word or phrase:</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputTwo" class="form-control" aria-labelledby="HelpInlineTwo" name="as_epq">
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <span id="HelpInlineTwo" class="form-text">
+                            Put exact words in quotes: "rat terrier"
+                          </span>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center mb-3">
+                        <div class="col-auto">
+                          <label for="inputThree" class="form-label">any of these words:</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputThree" class="form-control" aria-labelledby="HelpInlineThree" name="as_oq">
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <span id="HelpInlineThree" class="form-text">
+                            Type OR between all the words you want: miniature OR standard
+                          </span>
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center mb-3">
+                        <div class="col-auto">
+                          <label for="inputFour" class="form-label">this exact word or phrase:</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputFour" class="form-control" aria-labelledby="HelpInlineFour" name="as_eq"> 
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                          <span id="HelpInlineFour" class="form-text">
+                            Put a minus sign just before words that you don't want: <br>-rodent, -"Jack Russell"
+                          </span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end py-3">
+                        <button class="ms-auto btn btn-primary mx-2 mx-sm-1" type="submit" accesskey="enter">Advanced Search</button>
+                    </div>
+                </form>
+            </div>    
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer" style="color: #70757a">
+            <div class="px-4 py-3 border-bottom">Love from Malaysia</div>
+            <div class="py-2 d-flex justify-content-center pb-3">This is CS50W</div>
+        </div>
+        
+        <!-- JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    </body>
+</html>
